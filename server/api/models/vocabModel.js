@@ -11,9 +11,13 @@ const VocabSchema = new Schema(
         german: {
             type: String,
             required: 'German word cannot be blank'
+        },
+        vietnamese: {
+            type: String,
+            required: 'Vietnamese word cannot be blank'
         }
     },
-    { collection:'vocab'}
+    { collection:'vocab3'}
 );
 
 module.exports = mongoose.model('Vocab', VocabSchema);

@@ -6,12 +6,14 @@
                 <tr>
                     <th>English</th>
                     <th>German</th>
-                    <th colspan="3"></th>
+                    <th>Vietnamese</th>
+                    <th colspan="4"></th>
                 </tr>
             </thead>
             <tr v-for="(word, i) in words" :key="i">
                 <td>{{ word.english }}</td>
                 <td>{{ word.german }}</td>
+                <td>{{ word.vietnamese }}</td>
                 <td width="75" class="center aligned">
                     <router-link :to="{ name: 'show', params: { id: word._id } }">Show</router-link>
                 </td>
@@ -19,7 +21,7 @@
                     <router-link :to="{ name: 'edit', params: { id: word._id } }">Edit</router-link>
                 </td>
                 <td width="75" class="center aligned" @click.prevent="onDestroy(word._id)"><a
-                        :href="`/word/${word_id}`">Destroy</a></td>
+                        :href="`/word/${word._id}`">Destroy</a></td>
             </tr>
         </table>
     </div>

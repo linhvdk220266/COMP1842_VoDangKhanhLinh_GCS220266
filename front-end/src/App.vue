@@ -12,6 +12,9 @@
           <router-link to="/test" class="item">
             <i class="graduation cap icon"></i> Test
           </router-link>
+          <router-link to="/me" exact class="item">
+            <i class="user outline icon"></i> About me
+          </router-link>
         </div>
       </div>
     </div>
@@ -49,7 +52,7 @@ input {
 }
 
 div.label {
-  width: 120px;
+  width: 150px;
 }
 
 div.input {
