@@ -13,7 +13,7 @@
             <i class="graduation cap icon"></i> Test
           </router-link>
           <router-link to="/me" exact class="item">
-            <i class="user outline icon"></i> About me
+            <i class="user outline icon"></i> Linh
           </router-link>
         </div>
       </div>

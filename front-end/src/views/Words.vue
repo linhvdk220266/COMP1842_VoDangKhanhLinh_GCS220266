@@ -1,13 +1,13 @@
 <template>
     <div>
         <h1>Words</h1>
-        <table id="words" class="ui celled compact table">
+        <table id="words" class="ui celled center aligned compact table">
             <thead>
                 <tr>
                     <th>English</th>
                     <th>German</th>
                     <th>Vietnamese</th>
-                    <th colspan="4"></th>
+                    <th colspan="4">Action</th>
                 </tr>
             </thead>
             <tr v-for="(word, i) in words" :key="i">
