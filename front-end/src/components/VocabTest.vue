@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2>Score: {{ score }} out of {{ this.words.length }}</h2>
+    <!-- <h2>Score: {{ score }} out of {{ this.words.length }}</h2> -->
+    <h2>Score: {{ score }} out of 5</h2>
 
     <form action="#" @submit.prevent="onSubmit">
       <div class="ui labeled input fluid">
@@ -43,7 +44,8 @@ export default {
   },
   data() {
     return {
-      randWords: [...this.words.sort(() => 0.5 - Math.random())],
+      // randWords: [...this.words.sort(() => 0.5 - Math.random())],
+      randWords: [...this.words.sort(() => 0.5 - Math.random()).slice(0, 5)],
       incorrectGuesses: [],
       result: '',
       resultClass: '',

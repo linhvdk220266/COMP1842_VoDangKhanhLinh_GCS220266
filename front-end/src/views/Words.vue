@@ -1,12 +1,12 @@
 <template>
     <div>
-        <h1>Words</h1>
+        <h1>Words ( Total: {{ this.words.length }})</h1>
         <table id="words" class="ui celled center aligned compact table">
             <thead>
                 <tr>
-                    <th>English</th>
-                    <th>German</th>
-                    <th>Vietnamese</th>
+                    <th><i class="united kingdom flag"></i> English</th>
+                    <th><i class="germany flag"></i> German</th>
+                    <th><i class="vietnam flag"></i> Vietnamese</th>
                     <th colspan="4">Action</th>
                 </tr>
             </thead>
